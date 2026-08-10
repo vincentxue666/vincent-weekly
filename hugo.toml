@@ -54,7 +54,7 @@ favicon = '<link rel="icon" href="/favicon.png" type="image/png" />'
 # collapseNavItems = ["posts", "categories", "tags"]
 # noDefaultSummaryCover = true
 # showTableOfContents = true
-showSummaryCoverInPost = true
+# showSummaryCoverInPost = true
 # imageZoomableInPost = true
 # showPrevNextPost = true
 # reorderShares = ["x", "facebook", "whatsapp"]
@@ -70,6 +70,9 @@ showSummaryCoverInPost = true
 # [params.advanced]
 # customCSS = ["css/custom.css"]
 # customJS = []
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
 
 [params.experimental]
 jsDate = true

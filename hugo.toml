@@ -42,7 +42,7 @@ motto = "每周所见 · 所荐 · 所创"
 
 siteStartYear = 2026
 
-favicon = '<link rel="icon" href="/favicon.png" type="image/png" /><link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />'
+favicon = '<link rel="icon" href="/favicon.png" type="image/png" />'
 
 # Syntax highlighting
 # customSyntaxHighlighting = true

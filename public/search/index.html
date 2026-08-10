@@ -6,7 +6,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts | 追光周刊</title>
+    <title>搜索 | 追光周刊</title>
 
     
   
@@ -14,24 +14,21 @@
   
 
 
-<link rel="canonical" href="https://weekly.vincentxue.com/posts/" />
+<link rel="canonical" href="https://weekly.vincentxue.com/search/" />
 
 
 
 <meta name="author" content="Vincent" />
-<meta name="description" content="" />
-
-
-<meta name="keywords" content="">
+<meta name="description" content="追光周刊：每周分享我看到、分享以及创造的内容。" />
 
 
 
 <meta name="generator" content="Hugo 0.161.1">
 
 
-<meta property="og:url" content="https://weekly.vincentxue.com/posts/">
+<meta property="og:url" content="https://weekly.vincentxue.com/search/">
   <meta property="og:site_name" content="追光周刊">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="搜索">
   <meta property="og:description" content="追光周刊：每周分享我看到、分享以及创造的内容。">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="website">
@@ -40,7 +37,7 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:title" content="搜索">
   <meta name="twitter:description" content="追光周刊：每周分享我看到、分享以及创造的内容。">
 
 
@@ -246,41 +243,59 @@
           <div class="container">
             
 
-<div class="mt-8 lg:mt-12 px-4">
-  <div class="mx-auto prose dark:prose-invert">
-    <h1 class="text-3xl">
-      Posts
-    </h1>
-    
-  </div>
 
-  <div class="max-w-[65ch] mx-auto mt-8 lg:mt-12">
-    <ul class="timeline timeline-vertical">
-      
-      
-      <li class="[--timeline-col-start:64px]">
-        <hr class="dark:bg-base-content" />
-        <div class="timeline-start justify-self-start!">
-          <div class="text-lg font-semibold">2026</div>
+<div class="mt-8 lg:mt-12 px-4"
+
+x-data="{
+  search: '',
+  get posts() { return this.search !== '' ? window.fuse.search(this.search) : [] },
+}">
+  <label for="search" class="input w-full">
+    <input id="search" name="search" type="text" class="grow" placeholder="搜索" x-model.debounce="search" />
+    <ion-icon name="search"></ion-icon>
+  </label>
+
+  <div class="mt-8 space-y-4">
+  <template x-for="post in posts">
+    <a class="card bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
+      <div class="card-body">
+        <h2 class="card-title" x-text="post.item.title"></h2>
+
+        <div x-html="post.item.description"></div>
+
+        <div class="card-actions justify-between items-center mt-4">
+          <div class="flex items-center">
+            <template x-if="post.item.avatar">
+              <div class="avatar mr-1">
+                <div class="w-8 rounded-full">
+                  <img class="my-0" :src="post.item.avatar" :alt="post.item.author" />
+                </div>
+              </div>
+            </template>
+            <template x-if="!post.item.avatar">
+              <span>@</span>
+            </template>
+
+            <template x-if="post.item.author">
+              <span x-text="post.item.author"></span>
+            </template>
+            <template x-if="!post.item.author">
+              <span>Vincent</span>
+            </template>
+            </span>
+          </div>
+
+          <div class="inline-flex items-center">
+            <ion-icon name="time" class="mr-1"></ion-icon>
+            <span><span x-text="post.item.readingTime"></span>分钟阅读</span>
+          </div>
         </div>
-        <div class="timeline-middle flex items-center mx-8 my-2">
-          <ion-icon name="time"></ion-icon>
-        </div>
-        <div class="timeline-end timeline-box dark:border-base-content/60 prose dark:prose-invert my-8 text-sm">
-          <ul>
-            
-            <li>
-              <a href="/posts/20260810/">第一期：盛夏光年</a>
-            </li>
-            
-          </ul>
-        </div>
-        <hr class="dark:bg-base-content" />
-      </li>
-      
-    </ul>
+      </div>
+    </a>
+  </template>
   </div>
 </div>
+
 
 
             
@@ -406,7 +421,26 @@
 
 <script src="/js/main.min.js"></script>
 
-     
+    
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha256-42IbU8t3tOwwbexB7ZVRHm3YDRf65aBPPjRtIUufj5I=" crossorigin="anonymous"></script>
+<script>
+  var fuseData = [{"author":null,"avatar":null,"categories":null,"description":"带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接","readingTime":5,"tags":null,"title":"第一期：盛夏光年","url":"/posts/20260810/"}];
+  var fuseOptions = {
+    keys: [
+      "title",
+    ]
+  };
+
+  var fuse = new Fuse(fuseData, fuseOptions);
+</script>
+
+
 
     
 

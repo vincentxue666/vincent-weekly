@@ -28,7 +28,7 @@ motto = "记录每周的见闻、观点和创造"
 
 # footerBottomText = ""
 
-# rss = true
+rss = true
 
 # utterancesRepo = ""
 

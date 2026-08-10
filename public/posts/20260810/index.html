@@ -145,20 +145,22 @@
 
 
 
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
 
 
 
@@ -207,20 +209,18 @@
 
       
       
-
-
-
-
-
+<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+  <span>搜索</span>
+</a>
 
 
       
       
-
-
-
-
-
+<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="/index.xml" title="订阅">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+  <span>订阅</span>
+</a>
 
 
       
@@ -264,13 +264,9 @@
         <div class="front">
           <div class="container">
             
-<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
-  <div class="hidden lg:block">
-    
-  </div>
-
-  <div class="lg:col-span-2">
-    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+<div class="flex justify-center mt-4 px-4">
+  <div class="w-full max-w-3xl">
+    <article class="prose prose-quoteless dark:prose-invert !max-w-none" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
       
   <meta itemprop="name" content="第一期：盛夏光年">
   <meta itemprop="description" content="带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接">
@@ -415,14 +411,6 @@
 
       
     </article>
-  </div>
-
-  <div
-    x-data="tocHighlighter()"
-    @scroll.window="debouncedScroll"
-    class="hidden lg:flex lg:flex-col lg:items-end"
-  >
-    
   </div>
 </div>
 

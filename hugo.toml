@@ -67,8 +67,8 @@ favicon = '<link rel="icon" href="/favicon.png" type="image/png" />'
 # region = ""
 # lang = ""
 
-# [params.advanced]
-# customCSS = ["css/custom.css"]
+[params.advanced]
+customCSS = ["css/custom.css"]
 # customJS = []
 
 [markup.goldmark.parser]

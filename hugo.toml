@@ -3,6 +3,7 @@ defaultContentLanguage = "zh"
 locale = "zh"
 title = "追光周刊"
 theme = 'hugo-theme-dream-3.15.0'
+hasCJKLanguage = true
 
 # [services]
 # [services.disqus]

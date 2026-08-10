@@ -2,3 +2,7 @@ html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
 }
+
+.container {
+  margin-inline: auto;
+}

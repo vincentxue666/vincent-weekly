@@ -11,3 +11,160 @@ html {
   max-width: 48rem;
   margin-inline: auto;
 }
+
+/* ===== Article typography ===== */
+#dream-single-post-main {
+  line-height: 1.85;
+  font-size: 1.0625rem;
+}
+
+/* links */
+#dream-single-post-main a {
+  color: color-mix(in oklab, var(--color-primary) 55%, var(--color-base-content));
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+#dream-single-post-main a:hover {
+  color: var(--color-primary);
+  text-decoration-thickness: 2px;
+}
+
+/* headings */
+#dream-single-post-main h1 {
+  border-bottom: 2px solid color-mix(in oklab, var(--color-primary) 35%, transparent);
+  padding-bottom: 0.4em;
+}
+#dream-single-post-main h2 {
+  margin-top: 1.8em;
+  padding-left: 0.6em;
+  border-left: 4px solid var(--color-primary);
+  line-height: 1.45;
+}
+#dream-single-post-main h3 {
+  margin-top: 1.4em;
+  color: color-mix(in oklab, var(--color-primary) 60%, var(--color-base-content));
+}
+#dream-single-post-main h2,
+#dream-single-post-main h3 {
+  scroll-margin-top: 5rem;
+}
+
+/* blockquote callout */
+#dream-single-post-main blockquote {
+  position: relative;
+  border-left: none;
+  background: color-mix(in oklab, var(--color-primary) 9%, var(--color-base-100));
+  border-radius: 0.6em;
+  padding: 0.9em 1.2em;
+  font-style: normal;
+}
+#dream-single-post-main blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-primary);
+  border-radius: 0.6em 0 0 0.6em;
+}
+#dream-single-post-main blockquote p {
+  margin: 0;
+}
+
+/* inline code */
+#dream-single-post-main :not(pre) > code {
+  background: color-mix(in oklab, var(--color-primary) 12%, var(--color-base-100));
+  color: color-mix(in oklab, var(--color-primary-content) 70%, var(--color-base-content));
+  padding: 0.15em 0.4em;
+  border-radius: 0.35em;
+  font-size: 0.88em;
+}
+
+/* code blocks */
+#dream-single-post-main pre {
+  border-radius: 0.6em;
+  border: 1px solid color-mix(in oklab, var(--color-base-content) 15%, transparent);
+  padding: 1em 1.2em;
+  background: color-mix(in oklab, var(--color-base-content) 6%, var(--color-base-100));
+  overflow-x: auto;
+}
+#dream-single-post-main pre code {
+  font-size: 0.9em;
+  line-height: 1.7;
+}
+
+/* tables */
+#dream-single-post-main table {
+  width: 100%;
+  display: table;
+  font-size: 0.95em;
+}
+#dream-single-post-main th {
+  background: color-mix(in oklab, var(--color-primary) 12%, var(--color-base-100));
+  font-weight: 600;
+}
+#dream-single-post-main th,
+#dream-single-post-main td {
+  border: 1px solid color-mix(in oklab, var(--color-base-content) 18%, transparent);
+  padding: 0.5em 0.75em;
+}
+#dream-single-post-main tbody tr:nth-child(even) {
+  background: color-mix(in oklab, var(--color-base-content) 4%, var(--color-base-100));
+}
+
+/* horizontal rule */
+#dream-single-post-main hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--color-primary) 45%, transparent),
+    transparent
+  );
+  margin: 2em 0;
+}
+
+/* lists */
+#dream-single-post-main ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+#dream-single-post-main ul > li {
+  position: relative;
+  margin: 0.35em 0;
+}
+#dream-single-post-main ul > li::before {
+  content: "";
+  position: absolute;
+  left: -1.05em;
+  top: 0.62em;
+  width: 0.45em;
+  height: 0.45em;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+#dream-single-post-main ol {
+  padding-left: 1.4em;
+}
+#dream-single-post-main ol > li {
+  margin: 0.35em 0;
+}
+#dream-single-post-main ol > li::marker {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* figures & captions */
+#dream-single-post-main figcaption {
+  color: color-mix(in oklab, var(--color-base-content) 60%, transparent);
+  font-style: italic;
+}
+
+/* strong */
+#dream-single-post-main strong {
+  font-weight: 650;
+}

@@ -3,34 +3,34 @@
 {{ with site.GetPage "/about" }}
 {{ $aboutPages := .Resources.ByType "page" }}
 {{ if gt (len $aboutPages) 0 }}
-<a class="inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm font-semibold" href="{{ "/about" | relLangURL }}" title="{{ T "about" }}">
+<a class="inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm font-semibold" href="{{ "/about" | relLangURL }}" title="{{ T "about" }}">
   {{- T "about" -}}
 </a>
 {{ end }}
 {{ end }}
 
 {{ else if and (eq . "search") (gt (len (where site.Pages "Type" "search")) 0) }}
-<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "search" | relLangURL }}" title="{{ T "search" }}">
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "search" | relLangURL }}" title="{{ T "search" }}">
   <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
   <span>{{ T "search" }}</span>
 </a>
 {{ else if and (eq . "rss") site.Params.rss }}
-<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "index.xml" | relLangURL }}" title="{{ T "rss" }}">
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "index.xml" | relLangURL }}" title="{{ T "rss" }}">
   <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
   <span>{{ T "rss" }}</span>
 </a>
 {{ else if and (eq . "posts") (gt (len (where site.RegularPages "Type" "posts")) 0) }}
-<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "posts" | relLangURL }}" title="{{ T "archives" }}">
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "posts" | relLangURL }}" title="{{ T "archives" }}">
   <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
   <span>{{ T "archives" }}</span>
 </a>
 {{ else if and (eq . "categories") site.Taxonomies.categories }}
-<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "categories" | relLangURL }}" title="{{ T "allCategories" }}">
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "categories" | relLangURL }}" title="{{ T "allCategories" }}">
   <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
   <span>{{ T "allCategories" }}</span>
 </a>
 {{ else if and (eq . "tags") site.Taxonomies.tags }}
-<a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "tags" | relLangURL }}" title="{{ T "allTags" }}">
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ "tags" | relLangURL }}" title="{{ T "allTags" }}">
   <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
   <span>{{ T "allTags" }}</span>
 </a>
@@ -40,7 +40,7 @@
 {{ $item := index $navItems . }}
 {{ with $item }}
   {{ if .icon }}
-  <a class="group inline-flex items-center gap-1 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ .href }}" target="{{ .target }}" title="{{ .title }}">
+  <a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="{{ .href }}" target="{{ .target }}" title="{{ .title }}">
     <ion-icon class="group-hover:text-primary-content" name="{{ .icon }}"></ion-icon>
     {{ with .title }}<span>{{ . }}</span>{{ end }}
   </a>

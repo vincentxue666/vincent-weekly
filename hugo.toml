@@ -1,7 +1,7 @@
 baseurl = "https://dearwayway.github.io/"
-defaultContentLanguage = "en"
-locale = "en"
-title = "Hugo Theme Dream"
+defaultContentLanguage = "zh"
+locale = "zh"
+title = "追光周刊"
 theme = 'hugo-theme-dream-3.15.0'
 
 # [services]
@@ -19,11 +19,11 @@ darkTheme = "forest"
 # backgroundImage = "img/global-background.jpg"
 # backgroundImageDark = ""
 
-author = "Dream"
-# description = ""
-# avatar = "img/avatar.png"
-headerTitle = "Hugo Theme Dream"
-# motto = ""
+author = "Vincent"
+description = "追光周刊：每周分享我看到、分享以及创造的内容。"
+avatar = "favicon.svg"
+headerTitle = "追光周刊"
+motto = "每周所见 · 所荐 · 所创"
 
 # footerBottomText = ""
 
@@ -40,9 +40,9 @@ headerTitle = "Hugo Theme Dream"
 
 # email = ""
 
-siteStartYear = 2016
+siteStartYear = 2026
 
-# favicon = "favicon.ico"
+favicon = '<link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="alternate icon" href="/favicon.ico" type="image/x-icon" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" />'
 
 # Syntax highlighting
 # customSyntaxHighlighting = true

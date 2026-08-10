@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Theme Dream</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Hugo Theme Dream</description>
+    <title>追光周刊</title>
+    <link>https://dearwayway.github.io/</link>
+    <description>Recent content on 追光周刊</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 12:07:56 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <lastBuildDate>Mon, 10 Aug 2026 17:05:20 +0800</lastBuildDate>
+    <atom:link href="https://dearwayway.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2026 W21</title>
-      <link>http://localhost:1313/posts/2026-w21/</link>
-      <pubDate>Wed, 20 May 2026 12:07:56 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026-w21/</guid>
-      <description>&lt;h2 id=&#34;本周在做什么&#34;&gt;本周在做什么&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;所见&#34;&gt;所见&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;所想&#34;&gt;所想&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;所创&#34;&gt;所创&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;下周计划&#34;&gt;下周计划&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>2026 W22周</title>
-      <link>http://localhost:1313/posts/2026-w22/</link>
-      <pubDate>Wed, 20 May 2026 12:07:56 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026-w22/</guid>
-      <description>&lt;h2 id=&#34;本周在做什么&#34;&gt;本周在做什么&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;所见&#34;&gt;所见&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;所想&#34;&gt;所想&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;所创&#34;&gt;所创&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;下周计划&#34;&gt;下周计划&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <title>第一期：盛夏光年</title>
+      <link>https://dearwayway.github.io/posts/20260810/</link>
+      <pubDate>Mon, 10 Aug 2026 17:05:20 +0800</pubDate>
+      <guid>https://dearwayway.github.io/posts/20260810/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;media/17863527534828.jpg&#34;&gt;&#xA;题图：夏天就要去有山有水的地方，和物理世界连接&lt;/p&gt;&#xA;&lt;h2 id=&#34;本周值得分享&#34;&gt;本周值得分享&lt;/h2&gt;&#xA;&lt;h3 id=&#34;cloudflare财报分享ai流量已经超过人类&#34;&gt;cloudflare财报分享AI流量已经超过人类&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.36kr.com/p/3932854014393475&#34; target=&#34;_blank&#34;&gt;https://www.36kr.com/p/3932854014393475&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;jeff-dean的分享&#34;&gt;Jeff Dean的分享&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651290190&amp;amp;idx=1&amp;amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;amp;scene=21&amp;amp;poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn&#34; target=&#34;_blank&#34;&gt;https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651290190&amp;idx=1&amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;scene=21&amp;poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;lwf的分享&#34;&gt;LWF的分享&lt;/h3&gt;&#xA;&lt;p&gt;核心观察和趋势判断&lt;/p&gt;&#xA;&lt;h2 id=&#34;随便写写&#34;&gt;随便写写&lt;/h2&gt;&#xA;&lt;p&gt;codex的效果已经不如deepseek v4 flash了&lt;/p&gt;&#xA;&lt;h2 id=&#34;创造记录&#34;&gt;创造记录&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;截长图app&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

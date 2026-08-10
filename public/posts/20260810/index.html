@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="zh"
   x-data
   :class="$store.darkMode.isDark() ? 'dark' : 'light'"
   :data-theme="$store.darkMode.theme()">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 W22周 | Hugo Theme Dream</title>
+    <title>第一期：盛夏光年 | 追光周刊</title>
 
     
+  
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="alternate icon" href="/favicon.ico" type="image/x-icon" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
 
-<link rel="canonical" href="http://localhost:1313/posts/2026-w22/" />
+
+<link rel="canonical" href="https://dearwayway.github.io/posts/20260810/" />
 
 
 
-<meta name="author" content="Dream" />
-<meta name="description" content="本周在做什么 &hellip; 所见 &hellip; 所想 &hellip; 所创 &hellip; 下周计划 &hellip; " />
+<meta name="author" content="Vincent" />
+<meta name="description" content=" 题图：夏天就要去有山有水的地方，和物理世界连接
+本周值得分享 cloudflare财报分享AI流量已经超过人类 https://www.36kr.com/p/3932854014393475 Jeff Dean的分享 https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290190&idx=1&sn=a751a30e12ea7903302e55dd0aa94b07&scene=21&poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn LWF的分享 核心观察和趋势判断
+随便写写 codex的效果已经不如deepseek v4 flash了
+创造记录 截长图app " />
 
 
 <meta name="keywords" content="">
@@ -25,27 +32,35 @@
 <meta name="generator" content="Hugo 0.161.1">
 
 
-<meta property="og:url" content="http://localhost:1313/posts/2026-w22/">
-  <meta property="og:site_name" content="Hugo Theme Dream">
-  <meta property="og:title" content="2026 W22周">
-  <meta property="og:description" content="本周在做什么 … 所见 … 所想 … 所创 … 下周计划 …">
-  <meta property="og:locale" content="en">
+<meta property="og:url" content="https://dearwayway.github.io/posts/20260810/">
+  <meta property="og:site_name" content="追光周刊">
+  <meta property="og:title" content="第一期：盛夏光年">
+  <meta property="og:description" content="题图：夏天就要去有山有水的地方，和物理世界连接
+本周值得分享 cloudflare财报分享AI流量已经超过人类 https://www.36kr.com/p/3932854014393475 Jeff Dean的分享 https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651290190&amp;idx=1&amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;scene=21&amp;poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn LWF的分享 核心观察和趋势判断
+随便写写 codex的效果已经不如deepseek v4 flash了
+创造记录 截长图app">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-05-20T12:07:56+08:00">
-    <meta property="article:modified_time" content="2026-05-20T12:07:56+08:00">
+    <meta property="article:published_time" content="2026-08-10T17:05:20+08:00">
+    <meta property="article:modified_time" content="2026-08-10T17:05:20+08:00">
 
 
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="2026 W22周">
-  <meta name="twitter:description" content="本周在做什么 … 所见 … 所想 … 所创 … 下周计划 …">
+  <meta name="twitter:title" content="第一期：盛夏光年">
+  <meta name="twitter:description" content="题图：夏天就要去有山有水的地方，和物理世界连接
+本周值得分享 cloudflare财报分享AI流量已经超过人类 https://www.36kr.com/p/3932854014393475 Jeff Dean的分享 https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651290190&amp;idx=1&amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;scene=21&amp;poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn LWF的分享 核心观察和趋势判断
+随便写写 codex的效果已经不如deepseek v4 flash了
+创造记录 截长图app">
 
 
 
 
-<link rel="stylesheet" href="/css/output.css" />
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
 
 
 
@@ -98,19 +113,21 @@
   <div class="container flex justify-between px-4">
   
     <section class="flex items-center gap-2">
-      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="翻转一下！">
         <div class="w-12 h-12 rounded-full select-none">
-          <img src="/" alt="Hugo Theme Dream" />
+          <img src="/favicon.svg" alt="追光周刊" />
         </div>
       </div>
 
       
       <div>
         
-        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
-          Hugo Theme Dream
+        <a href="https://dearwayway.github.io/" class="text-lg font-semibold cursor-pointer">
+          追光周刊
         </a>
         
+        
+        <div class="text-base-content/60 text-sm">每周所见 · 所荐 · 所创</div>
         
       </div>
       
@@ -154,9 +171,9 @@
 
 
 <li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
     <ion-icon name="archive"></ion-icon>
-    Archives
+    归档
   </a>
 </li>
 
@@ -215,7 +232,7 @@
 
       
       
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
   <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
 </a>
 
@@ -261,25 +278,28 @@
   <div class="lg:col-span-2">
     <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
       
-  <meta itemprop="name" content="2026 W22周">
-  <meta itemprop="description" content="本周在做什么 … 所见 … 所想 … 所创 … 下周计划 …">
-  <meta itemprop="datePublished" content="2026-05-20T12:07:56+08:00">
-  <meta itemprop="dateModified" content="2026-05-20T12:07:56+08:00">
-  <meta itemprop="wordCount" content="10">
+  <meta itemprop="name" content="第一期：盛夏光年">
+  <meta itemprop="description" content="题图：夏天就要去有山有水的地方，和物理世界连接
+本周值得分享 cloudflare财报分享AI流量已经超过人类 https://www.36kr.com/p/3932854014393475 Jeff Dean的分享 https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651290190&amp;idx=1&amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;scene=21&amp;poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn LWF的分享 核心观察和趋势判断
+随便写写 codex的效果已经不如deepseek v4 flash了
+创造记录 截长图app">
+  <meta itemprop="datePublished" content="2026-08-10T17:05:20+08:00">
+  <meta itemprop="dateModified" content="2026-08-10T17:05:20+08:00">
+  <meta itemprop="wordCount" content="15">
 
       <header>
-        <h1 itemprop="headline">2026 W22周</h1>
+        <h1 itemprop="headline">第一期：盛夏光年</h1>
         <p class="text-sm">
           
-            Wednesday, May 20, 2026
+            星期一, 8月 10, 2026
           
 
-          | <span>1 minute read</span>
+          | <span>1分钟阅读</span>
 
           
-          | <span>Updated at
+          | <span>更新于
             
-              Wednesday, May 20, 2026
+              星期一, 8月 10, 2026
             </span>
           
         </p>
@@ -294,7 +314,7 @@
 
   <span itemprop="author" itemscope itemtype="https://schema.org/Person">
   
-    <span itemprop="name">Dream</span>
+    <span itemprop="name">Vincent</span>
   
   </span>
 </div>
@@ -311,19 +331,19 @@
   
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://x.com/intent/post?text=2026%20W22%e5%91%a8&amp;url=http://localhost:1313/posts/2026-w22/" target="_blank" rel="noopener noreferrer"
+      href="https://x.com/intent/post?text=%e7%ac%ac%e4%b8%80%e6%9c%9f%ef%bc%9a%e7%9b%9b%e5%a4%8f%e5%85%89%e5%b9%b4&amp;url=https://dearwayway.github.io/posts/20260810/" target="_blank" rel="noopener noreferrer"
       title="Share on X">
       <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
     </a>
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/2026-w22/" target="_blank" rel="noopener noreferrer"
+      href="https://facebook.com/sharer/sharer.php?u=https://dearwayway.github.io/posts/20260810/" target="_blank" rel="noopener noreferrer"
       title="Share on Facebook">
       <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
     </a>
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://wa.me/?text=2026%20W22%e5%91%a8%20http://localhost:1313/posts/2026-w22/" target="_blank" rel="noopener noreferrer"
+      href="https://wa.me/?text=%e7%ac%ac%e4%b8%80%e6%9c%9f%ef%bc%9a%e7%9b%9b%e5%a4%8f%e5%85%89%e5%b9%b4%20https://dearwayway.github.io/posts/20260810/" target="_blank" rel="noopener noreferrer"
       title="Share on WhatsApp">
       <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
     </a>
@@ -339,25 +359,22 @@
       <section id="dream-single-post-content" itemprop="articleBody">
         
 
-        <h2 id="本周在做什么">本周在做什么</h2>
+        <p><img src="media/17863527534828.jpg">
+题图：夏天就要去有山有水的地方，和物理世界连接</p>
+<h2 id="本周值得分享">本周值得分享</h2>
+<h3 id="cloudflare财报分享ai流量已经超过人类">cloudflare财报分享AI流量已经超过人类</h3>
+<p><a href="https://www.36kr.com/p/3932854014393475" target="_blank">https://www.36kr.com/p/3932854014393475</a>
+</p>
+<h3 id="jeff-dean的分享">Jeff Dean的分享</h3>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651290190&amp;idx=1&amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;scene=21&amp;poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn" target="_blank">https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290190&idx=1&sn=a751a30e12ea7903302e55dd0aa94b07&scene=21&poc_token=HN2OeWqj-LHHtXvbaWWUPybWMqhfVHohIDRZwAEn</a>
+</p>
+<h3 id="lwf的分享">LWF的分享</h3>
+<p>核心观察和趋势判断</p>
+<h2 id="随便写写">随便写写</h2>
+<p>codex的效果已经不如deepseek v4 flash了</p>
+<h2 id="创造记录">创造记录</h2>
 <ul>
-<li>&hellip;</li>
-</ul>
-<h2 id="所见">所见</h2>
-<ul>
-<li>&hellip;</li>
-</ul>
-<h2 id="所想">所想</h2>
-<ul>
-<li>&hellip;</li>
-</ul>
-<h2 id="所创">所创</h2>
-<ul>
-<li>&hellip;</li>
-</ul>
-<h2 id="下周计划">下周计划</h2>
-<ul>
-<li>&hellip;</li>
+<li>截长图app</li>
 </ul>
 
 
@@ -384,21 +401,13 @@
 <footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
 
   <div>
-  
-  <p>
-    © 2016 - 2026 Hugo Theme Dream
-  </p>
-  
-
-  
   <p class="text-sm">
-    🌱
-    <span class="text-base-content/60">
-      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
-      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
-    >
+    Made with
+    <span class="text-error">❤</span>
+    ·
+    Vincent
+    <span class="text-base-content/60">© 2026</span>
   </p>
-  
 </div>
 
   <div
@@ -451,21 +460,13 @@
 <footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
 
   <div>
-  
-  <p>
-    © 2016 - 2026 Hugo Theme Dream
-  </p>
-  
-
-  
   <p class="text-sm">
-    🌱
-    <span class="text-base-content/60">
-      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
-      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
-    >
+    Made with
+    <span class="text-error">❤</span>
+    ·
+    Vincent
+    <span class="text-base-content/60">© 2026</span>
   </p>
-  
 </div>
 
   <div
@@ -508,12 +509,16 @@
 
   
   
-  <script src="/js/grid.js"></script>
+    
+  
+  <script src="/js/grid.min.js"></script>
 
 
 
 
-<script src="/js/main.js"></script>
+  
+
+<script src="/js/main.min.js"></script>
 
     
 
@@ -523,7 +528,9 @@
 
 
 
-<script src="/js/toc.js"></script>
+  
+
+<script src="/js/toc.min.js"></script>
 
 
 

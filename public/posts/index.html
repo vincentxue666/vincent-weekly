@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="zh"
   x-data
   :class="$store.darkMode.isDark() ? 'dark' : 'light'"
   :data-theme="$store.darkMode.theme()">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts | Hugo Theme Dream</title>
+    <title>Posts | 追光周刊</title>
 
     
+  
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="alternate icon" href="/favicon.ico" type="image/x-icon" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
 
-<link rel="canonical" href="http://localhost:1313/posts/" />
+
+<link rel="canonical" href="https://dearwayway.github.io/posts/" />
 
 
 
-<meta name="author" content="Dream" />
+<meta name="author" content="Vincent" />
 <meta name="description" content="" />
 
 
@@ -25,10 +29,11 @@
 <meta name="generator" content="Hugo 0.161.1">
 
 
-<meta property="og:url" content="http://localhost:1313/posts/">
-  <meta property="og:site_name" content="Hugo Theme Dream">
+<meta property="og:url" content="https://dearwayway.github.io/posts/">
+  <meta property="og:site_name" content="追光周刊">
   <meta property="og:title" content="Posts">
-  <meta property="og:locale" content="en">
+  <meta property="og:description" content="追光周刊：每周分享我看到、分享以及创造的内容。">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="website">
 
 
@@ -36,11 +41,14 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
+  <meta name="twitter:description" content="追光周刊：每周分享我看到、分享以及创造的内容。">
 
 
 
 
-<link rel="stylesheet" href="/css/output.css" />
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
 
 
 
@@ -77,19 +85,21 @@
   <div class="container flex justify-between px-4">
   
     <section class="flex items-center gap-2">
-      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="翻转一下！">
         <div class="w-12 h-12 rounded-full select-none">
-          <img src="/" alt="Hugo Theme Dream" />
+          <img src="/favicon.svg" alt="追光周刊" />
         </div>
       </div>
 
       
       <div>
         
-        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
-          Hugo Theme Dream
+        <a href="https://dearwayway.github.io/" class="text-lg font-semibold cursor-pointer">
+          追光周刊
         </a>
         
+        
+        <div class="text-base-content/60 text-sm">每周所见 · 所荐 · 所创</div>
         
       </div>
       
@@ -133,9 +143,9 @@
 
 
 <li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
     <ion-icon name="archive"></ion-icon>
-    Archives
+    归档
   </a>
 </li>
 
@@ -194,7 +204,7 @@
 
       
       
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
   <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
 </a>
 
@@ -257,11 +267,7 @@
           <ul>
             
             <li>
-              <a href="/posts/2026-w22/">2026 W22周</a>
-            </li>
-            
-            <li>
-              <a href="/posts/2026-w21/">2026 W21</a>
+              <a href="/posts/20260810/">第一期：盛夏光年</a>
             </li>
             
           </ul>
@@ -278,21 +284,13 @@
 <footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
 
   <div>
-  
-  <p>
-    © 2016 - 2026 Hugo Theme Dream
-  </p>
-  
-
-  
   <p class="text-sm">
-    🌱
-    <span class="text-base-content/60">
-      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
-      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
-    >
+    Made with
+    <span class="text-error">❤</span>
+    ·
+    Vincent
+    <span class="text-base-content/60">© 2026</span>
   </p>
-  
 </div>
 
   <div
@@ -345,21 +343,13 @@
 <footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
 
   <div>
-  
-  <p>
-    © 2016 - 2026 Hugo Theme Dream
-  </p>
-  
-
-  
   <p class="text-sm">
-    🌱
-    <span class="text-base-content/60">
-      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
-      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
-    >
+    Made with
+    <span class="text-error">❤</span>
+    ·
+    Vincent
+    <span class="text-base-content/60">© 2026</span>
   </p>
-  
 </div>
 
   <div
@@ -402,12 +392,16 @@
 
   
   
-  <script src="/js/grid.js"></script>
+    
+  
+  <script src="/js/grid.min.js"></script>
 
 
 
 
-<script src="/js/main.js"></script>
+  
+
+<script src="/js/main.min.js"></script>
 
      
 

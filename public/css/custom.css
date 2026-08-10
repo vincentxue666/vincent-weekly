@@ -6,3 +6,8 @@ html {
 .container {
   margin-inline: auto;
 }
+
+#dream-single-post-main {
+  max-width: 48rem;
+  margin-inline: auto;
+}

@@ -64,8 +64,6 @@
           {{ if $hasAuthor }}
             {{ partial "author.html" (dict "Params" .Params "template" "single") }}
           {{ end }}
-
-          {{ partial "share.html" . }}
         </div>
       </header>
 
@@ -86,6 +84,10 @@
             {{ partialCached "adsense-post-bottom.html" . }}
           </div>
         {{ end }}
+
+        <div class="flex justify-end mt-8">
+          {{ partial "share.html" . }}
+        </div>
       </section>
 
       {{ if site.Params.showPrevNextPost }}

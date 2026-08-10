@@ -11,3 +11,11 @@ html {
   max-width: 48rem;
   margin-inline: auto;
 }
+
+#dream-single-post-main h1 {
+  margin-bottom: 0.5rem;
+}
+
+#dream-single-post-main h1 + p {
+  margin-top: 0;
+}

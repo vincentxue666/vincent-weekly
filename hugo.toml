@@ -23,7 +23,7 @@ darkTheme = "forest"
 author = "Vincent"
 description = "追光周刊：每周分享我看到、分享以及创造的内容。"
 images = ["site-logo.png"]
-avatar = "site-logo.png"
+avatar = "avatar.png"
 headerTitle = "追光周刊"
 motto = "记录每周的见闻、观点和创造"
 

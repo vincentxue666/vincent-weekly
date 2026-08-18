@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh"
+  x-data
+  :class="$store.darkMode.isDark() ? 'dark' : 'light'"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一期：盛夏光年 | 追光周刊</title>
+
+    
+  
+    <link rel="icon" href="/favicon.png" type="image/png" />
+  
+
+
+<link rel="canonical" href="https://weekly.vincentxue.com/posts/2026-08-10/" />
+
+
+
+<meta name="author" content="Vincent" />
+<meta name="description" content="带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接" />
+
+
+<meta name="keywords" content="">
+
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+
+<meta property="og:url" content="https://weekly.vincentxue.com/posts/2026-08-10/">
+  <meta property="og:site_name" content="追光周刊">
+  <meta property="og:title" content="第一期：盛夏光年">
+  <meta property="og:description" content="带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-08-10T17:05:20+08:00">
+    <meta property="article:modified_time" content="2026-08-10T17:05:20+08:00">
+    <meta property="og:image" content="https://weekly.vincentxue.com/site-logo.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://weekly.vincentxue.com/site-logo.png">
+  <meta name="twitter:title" content="第一期：盛夏光年">
+  <meta name="twitter:description" content="带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script>
+      window.lightTheme = 'emerald'
+      window.darkTheme = 'forest'
+
+      ;(function() {
+        const isDark = ('hugo-theme-dream-is-dark' in localStorage)
+          ? window.localStorage.getItem('hugo-theme-dream-is-dark') === 'y'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        const theme = isDark ? window.darkTheme : window.lightTheme
+
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.1/dist/cdn.min.js" integrity="sha256-Rmqrc5SKeSLTSnQ9shSKWmJco1ks8c1hLI8UG2Np03M=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-2">
+      <a href="https://weekly.vincentxue.com/" class="avatar">
+        <div class="w-12 h-12 rounded-full select-none">
+          <img src="/site-logo.png" alt="追光周刊" />
+        </div>
+      </a>
+
+      
+      <div>
+        
+        <a href="https://weekly.vincentxue.com/" class="text-lg font-semibold cursor-pointer">
+          追光周刊
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">记录每周的见闻、观点和创造</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+  <span>搜索</span>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="/index.xml" title="订阅">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+  <span>订阅</span>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center gap-2 p-2 rounded-full cursor-pointer hover:bg-primary text-sm" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+  <span>归档</span>
+</a>
+
+
+      
+      
+
+
+
+
+
+
+
+      
+      
+
+
+
+
+
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+    <article class="prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="第一期：盛夏光年">
+  <meta itemprop="description" content="带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接">
+  <meta itemprop="datePublished" content="2026-08-10T17:05:20+08:00">
+  <meta itemprop="dateModified" content="2026-08-10T17:05:20+08:00">
+  <meta itemprop="wordCount" content="2394">
+  <meta itemprop="image" content="https://weekly.vincentxue.com/site-logo.png">
+
+      <header>
+        <h1 itemprop="headline">第一期：盛夏光年</h1>
+        <p class="text-sm flex items-center gap-2 flex-wrap">
+          发布于：
+          
+            <span data-format="luxon">2026-08-10T17:05:20&#43;08:00</span>
+          
+
+          <span class="badge badge-ghost badge-sm">
+            <ion-icon name="time" class="mr-0.5"></ion-icon>
+            5分钟阅读
+          </span>
+        </p>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <figure>
+    <img src="https://pmvincent-1257701794.cos.ap-beijing.myqcloud.com/2026/08/10/17863527534828.jpg" alt="题图"><figcaption class="text-sm italic text-center mt-2">带娃去山里撒欢，夏天就要去有山有水的地方，和物理世界连接</figcaption></figure><h2 id="本周精彩分享">本周精彩分享</h2>
+<h3 id="1-cloudflare财报分享ai流量已经超过人类流量">1. Cloudflare财报分享AI流量已经超过人类流量</h3>
+<p>本周shock到我的一个信息是看到Cloudflare说AI在互联网上的流量已经超过了人类，而且这个速度比他们内部预测的还要快：原本预测2027年底才越线，后来改口2027年初，结果2026年5月就达成了。
+<img src="https://pmvincent-1257701794.cos.ap-beijing.myqcloud.com/2026/08/10/17863588400919.jpg" alt="Cloudflare 财报：AI 与人类流量对比"></p>
+<p>如果照这么发展下去，未来五年后，机器流量会是人类的1000倍。那个时候注意力经济很可能已经不是互联网第一大商业模式了，反而有很多基建会成为大生意，比如Agent之间的连接，小额的访问支付等，互联网内容生态也会发生翻天覆地的变化，网站UI也没有那么重要了，毕竟已经不需要人去看了，想想还挺震惊的。</p>
+
+
+
+  <blockquote>
+    <p>来自：<a href="https://www.36kr.com/p/3932854014393475" target="_blank">《今天，互联网不再只属于人类，Cloudflare实锤机器流量反超》</a>
+</p>
+
+  </blockquote>
+
+<h3 id="2-jeff-dean的分享">2. Jeff Dean的分享</h3>
+<p>本周Google首席科学家Jeff Dean离职创业了，似乎是个很强烈的信号，AI从基础研究转向应用层了，或者说虽然基础研究还没到天花板，但后面的范式继续scaling law再到持续学习的路线已经看清楚了，这些大神们便纷纷开始下场做应用探索了，毕竟我们的世界里还有那么多未解之谜，数学的、生物的、医学的、以及璀璨的宇宙空间的。</p>
+<p>这篇文章分享的是Jeff Dean最近的一次访谈，里面提到的不少观点都很实在，包括：</p>
+<ul>
+<li>模型的发展未来能够取代初级开发者的职位，这个过程会很快发生</li>
+<li>TPU的出现其实不是具有前瞻性的豪赌，而是持续思考当前系统瓶颈在哪里的产物，它恰好成为了LLM的根基，但就算LLM不来，TPU也会因为各种语音推理任务而广泛使用</li>
+<li>对于创始人来说，如果你发现你要做的事情现在的模型成功率已经超过了20%，那别做了，很快会被模型能力碾压</li>
+<li>2027年的趋势是：更多机器学习系统会自动化，但凡有可衡量目标的事情，例如科学和工程的其他领域，在不间断地智能应用探索后都能取得很大进展。</li>
+<li>一个很有意思的思想实验：硅基世界讲究确定性，一个芯片的出错率是几百万分之一，但碳基世界的事情充满随机，但也能保证信息可用，我们的工程和算法在这两种情况下的设计肯定是不一样的，尤其是在后者上，如果我们设计出来了不稳定环境下的稳定系统，那么还会涌现出更多的东西。</li>
+</ul>
+
+
+
+  <blockquote>
+    <p>来自：<a href="https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651290190&amp;idx=1&amp;sn=a751a30e12ea7903302e55dd0aa94b07&amp;scene=21&amp;poc_token=HDeteWqjxmNItFILfg4toZZhAkq7XuhoJbvLt2wg" target="_blank">《Jeff Dean离职前最后一次对话：我低估了AI，也看清了创业者的唯一生路》</a>
+</p>
+
+  </blockquote>
+
+<h3 id="3-梁文峰的讲话">3. 梁文峰的讲话</h3>
+<p>最近梁文峰对投资人的内部分享被大范围传阅，原文内容据说比较敏感，暂时不放了，但透露出来的观点非常有意思，也能够对当下的模型真实的ROI有一些新的认知：</p>
+<ul>
+<li>DeepSeek的目标不是成为最赚钱的AI公司，但商业模式也已经跑通了</li>
+<li>开源不等于不赚钱，但只赚“合理利润”，当前的硬件10个月左右就能收回成本，显卡生命周期有五年，之后就是赚取的纯利润</li>
+<li>组织最重要的不是 KPI，而是“愿景 + 自由探索”，公司正式安排的工作，最好不要超过员工时间的 50%，另外一半时间留给自由探索。真正的研究需要松弛环境。</li>
+<li>DeepSeek 最重要的资产不是钱，而是“核心团队稳定”，融资也是从团队稳定性角度着想的。</li>
+<li>所有“热门机会”在 AGI 面前都只是芝麻，公司的一切战略决定背后都是实现AGI的愿景。</li>
+<li>梁文锋眼里的 AGI 路线：Agent → 持续学习 → 自我迭代 → 具身智能。Coding和Agent是重要的，因为可以帮助加速AGI的实现，而多模态、世界模型有些看不清，可能只是一个“组件”，并不决定智能能力的真正上限。</li>
+<li>中美的核心差异不在人才、组织，而是算力，算力仍然非常紧缺，因此Scaling Law 还远远没有到头。国产AI芯片是很有希望跑出来的，目前已经在推理上证明“完全可以用”，CUDA 生态也通过软件适配、编译和生态建设大幅削弱了壁垒。</li>
+</ul>
+
+
+
+  <blockquote>
+    <p>参考：<a href="https://www.stcn.com/article/detail/4037119.html" target="_blank">梁文锋4小时投资会讲话流出：DeepSeek为什么不做“更赚钱”的公司？</a>
+</p>
+
+  </blockquote>
+
+<h2 id="随便写写">随便写写</h2>
+<h3 id="1-最近deepseek-v4-flash爆火实测codex的优势已经大幅削弱">1. 最近DeepSeek V4 Flash爆火，实测Codex的优势已经大幅削弱</h3>
+<p>自从用上了DeepSeek V4 Flash正式版，我发现我回不去了，不管是响应速度还是指令执行的精准度上都非常好，另外有两个瞬间我发现我可能要抛弃Codex了，一个是有个困扰我两个星期、用Codex迟迟解决不好的问题，用DeepSeek竟然只花了10分钟就攻克了。还有一个是一直以来我用的一套来监控小红书和抖音上的订阅方案，最近持续有稳定性问题，用DeepSeek扫描后它发现了非常多实现上的不合理之处，而这个程序最早是Codex搭建的，这就让Codex很尴尬了。</p>
+<h3 id="2-ai办公大战又打响了">2. AI办公大战又打响了</h3>
+<p>最近各个大厂又开始焦虑和竞争了，这次的主战场是办公，因为大家突然发现C端再卷也卷不来收入，而Claude靠ToB的生意已经快万亿美金估值了，才惊觉路线又走错了，生产力市场远比消费互联网市场要大的多得多，毕竟直接分的是GDP的蛋糕。</p>
+<p>这不就又开始卷上了嘛，又有好戏看了，目前的战况看起来是：</p>
+<ul>
+<li>腾讯跑得最快，从 2026 年 3 月起集中押注 WorkBuddy，把文档、网盘、知识库等能力往里并，日活已经到百万量级，内部把它当成目前领先的办公AI产品。</li>
+<li>阿里在大整编，原本分散的 QoderWork、钉钉孵化的 悟空、以及 MuleRun被合成千问办公，背后是钉钉换帅后，赛马模式提前收场，先把组织和品牌统一。</li>
+<li>字节也在变阵，飞书产品并入豆包体系，销售/市场/客服并到火山引擎，原因是飞书的AI智能体商业化一般，而豆包企业化也不顺，继续分兵重复建设意义不大。</li>
+</ul>
+<h2 id="创造记录">创造记录</h2>
+<p>从6月初开始，花了两个月的时间，和AI一起打造了一款工具类APP，叫「ScreenSnap」，专注于在iOS上进行截长图操作，目前状态是接近APP测试的尾声，相信在未来的一两周内就能在App Store上上架了。</p>
+<p>产品的核心功能Feature包括：</p>
+<ul>
+<li>只需要一键点击再加上屏幕滑动就可以通过录屏拼接成长图</li>
+<li>智能识别拼接接缝，对于拼接错误的情况（极少）还可以手动修补</li>
+<li>支持自动识别和去除滚动条，还一个纯净的截图</li>
+<li>完全免费使用，无广告</li>
+</ul>
+<figure>
+    <img src="https://pmvincent-1257701794.cos.ap-beijing.myqcloud.com/2026/08/10/17863652072752.jpg" alt="ScreenSnap 应用界面"></figure>
+
+        
+
+        <div class="flex justify-end mt-8">
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%ac%e4%b8%80%e6%9c%9f%ef%bc%9a%e7%9b%9b%e5%a4%8f%e5%85%89%e5%b9%b4&amp;url=https://weekly.vincentxue.com/posts/2026-08-10/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://weekly.vincentxue.com/posts/2026-08-10/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%ac%e4%b8%80%e6%9c%9f%ef%bc%9a%e7%9b%9b%e5%a4%8f%e5%85%89%e5%b9%b4%20https://weekly.vincentxue.com/posts/2026-08-10/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </section>
+
+      
+
+      
+    </article>
+</div>
+
+
+            
+<footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
+
+  <div>
+  <p class="text-sm">
+    Made with
+    <span class="text-error">❤</span>
+    ·
+    <a class="hover:underline" href="https://x.com/iamvincentxue" target="_blank" rel="noopener noreferrer">Vincent Xue</a>
+    <span class="text-base-content/60">© 2026</span>
+  </p>
+</div>
+
+  <div class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full">
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="sunny mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'sunny' && 'bg-primary'"
+    @click="$store.darkMode.toggle('n')"
+  >
+    <svg
+      style="width: 18px; height: 18px"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      class="group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'sunny' && 'text-primary-content'"
+    >
+      <circle cx="12" cy="12" r="4.5" />
+      <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+    </svg>
+  </div>
+
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="moon mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'moon' && 'bg-primary'"
+    @click="$store.darkMode.toggle('y')"
+  >
+    <svg
+      style="width: 18px; height: 18px"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'moon' && 'text-primary-content'"
+    >
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+    </svg>
+  </div>
+
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="auto mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'desktop' && 'bg-primary'"
+    @click="$store.darkMode.toggle('auto')"
+  >
+    <svg
+      style="width: 18px; height: 18px"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'desktop' && 'text-primary-content'"
+    >
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <path d="M8 21h8M12 17v4" />
+    </svg>
+  </div>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        
+        <div class="back" data-nosnippet>
+        
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
+
+  <div>
+  <p class="text-sm">
+    Made with
+    <span class="text-error">❤</span>
+    ·
+    <a class="hover:underline" href="https://x.com/iamvincentxue" target="_blank" rel="noopener noreferrer">Vincent Xue</a>
+    <span class="text-base-content/60">© 2026</span>
+  </p>
+</div>
+
+  <div class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full">
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="sunny mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'sunny' && 'bg-primary'"
+    @click="$store.darkMode.toggle('n')"
+  >
+    <svg
+      style="width: 18px; height: 18px"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      class="group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'sunny' && 'text-primary-content'"
+    >
+      <circle cx="12" cy="12" r="4.5" />
+      <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+    </svg>
+  </div>
+
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="moon mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'moon' && 'bg-primary'"
+    @click="$store.darkMode.toggle('y')"
+  >
+    <svg
+      style="width: 18px; height: 18px"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'moon' && 'text-primary-content'"
+    >
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+    </svg>
+  </div>
+
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="auto mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'desktop' && 'bg-primary'"
+    @click="$store.darkMode.toggle('auto')"
+  >
+    <svg
+      style="width: 18px; height: 18px"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'desktop' && 'text-primary-content'"
+    >
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <path d="M8 21h8M12 17v4" />
+    </svg>
+  </div>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+<script src="/js/toc.min.js"></script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -19,3 +19,22 @@ html {
 #dream-single-post-main h1 + p {
   margin-top: 0;
 }
+
+/* equal-height homepage cards */
+.dream-column .card figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.dream-column .card figure img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.dream-card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

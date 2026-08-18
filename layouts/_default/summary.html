@@ -30,7 +30,7 @@
   <div class="card-body">
     <h2 class="card-title">{{ .Title }}</h2>
 
-    {{ or .Description (.Summary | emojify | safeHTML) }}
+    <p class="dream-card-desc">{{ or .Description (.Summary | emojify | safeHTML) }}</p>
 
     <div class="card-actions justify-between items-center mt-4">
       <p class="date text-base-content/60 text-sm">

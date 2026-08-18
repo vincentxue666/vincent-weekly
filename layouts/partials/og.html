@@ -1,0 +1,32 @@
+{{ with .Site.Title }}<meta property="og:site_name" content="{{ . }}">{{ end }}
+{{ with .Title }}<meta property="og:title" content="{{ . }}">{{ end }}
+{{ with .Description | default .Summary | default .Site.Params.description }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ $images := slice }}
+{{ with .Params.cover }}
+  {{ $images = $images | append . }}
+{{ else }}
+  {{ $images = .Param "images" }}
+{{ end }}
+{{ range first 6 $images }}
+  <meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+{{ with .Params.locale }}<meta property="og:locale" content="{{ . }}">{{ end }}
+{{ if .IsPage }}
+  {{ with .Section }}<meta property="article:section" content="{{ . }}">{{ end }}
+  {{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{ with .PublishDate }}<meta property="article:published_time" content="{{ .Format $ISO8601 }}">{{ end }}
+  {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format $ISO8601 }}">{{ end }}
+  {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{ end }}
+
+{{ $twitterImage := .Params.cover | default (index (.Param "images") 0) }}
+{{ with $twitterImage }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{ else }}
+<meta name="twitter:card" content="summary" />
+{{ end }}
+{{ with .Title }}<meta name="twitter:title" content="{{ . }}">{{ end }}
+{{ with .Description | default .Summary | default .Site.Params.description }}<meta name="twitter:description" content="{{ . }}">{{ end }}

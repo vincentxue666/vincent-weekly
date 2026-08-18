@@ -7,6 +7,12 @@ html {
   margin-inline: auto;
 }
 
+@media (min-width: 1536px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
 #dream-single-post-main {
   max-width: 48rem;
   margin-inline: auto;

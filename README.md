@@ -13,8 +13,3 @@
 | --- | --- | --- | --- |
 | 第二期 | 玉泉垂虹 | 2026-08-17 | [阅读全文](https://weekly.vincentxue.com/posts/2026-08-17/) |
 | 第一期 | 盛夏光年 | 2026-08-10 | [阅读全文](https://weekly.vincentxue.com/posts/2026-08-10/) |
-
-## 新增一期
-
-1. 在 `content/posts/` 下新建 `YYYY-MM-DD.md`，填写 front matter（`title`、`date`、`description`、`cover`）。
-2. 推送 `main` 分支，GitHub Actions 会自动构建并部署到 GitHub Pages。
